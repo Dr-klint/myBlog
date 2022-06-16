@@ -1,0 +1,14 @@
+@import url(style.css);
+
+.blog__page {
+  padding-top: 90px;
+}
+
+.author {
+  height: 100%;
+}
+
+.author__img {
+  width: 8rem;
+  height: 8rem;
+}
