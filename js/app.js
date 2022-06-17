@@ -14,8 +14,6 @@ function getFeedBack() {
       feedbackBox = data;
       renderUI(feedbackBox);
     });
-  document.querySelector(".feedback__page").style.background =
-    " linear-gradient(rgba(0, 0, 0, 0.837), rgba(5, 5, 25, 0.812))";
 }
 
 document.querySelector(".get-post").addEventListener("click", function () {
@@ -125,8 +123,8 @@ function renderUI(arr) {
               <p class="feedback-post">${post.body}</p>
               <div class="d-flex justify-content-between">
                   <button class="btn btn-secondary px-2 py-1 mt-3 update-post me-2"  onclick='updatePost(${post.id})'>Update Post</button>
-                  <button class="btn btn-success px-2 py-1 mt-3 me-2" id='view-btn' onclick='openSingle(${post.id})'>View Post <i class='bx bx-message'></i></button>
-                  <button class="btn btn-danger px-2 py-1 mt-3"  onclick='deletePost(${post.id})'>Delete Post <i class='bx bx-trash'></i></button>
+                  <button class="btn btn-success px-2 py-1 mt-3 me-2" id='view-btn' onclick='openSingle(${post.id})'>View more </button>
+                  <button class="btn btn-danger px-2 py-1 mt-3"  onclick='deletePost(${post.id})'><i class='bx bx-trash'></i></button>
               </div>  
       </div> 
   </div>  
@@ -135,5 +133,3 @@ function renderUI(arr) {
 
   feedbackWrapper.innerHTML = feedbackHolder;
 }
-
-getFeedBack();
