@@ -14,6 +14,8 @@ function getFeedBack() {
       feedbackBox = data;
       renderUI(feedbackBox);
     });
+  document.querySelector(".feedback__page").style.background =
+    " linear-gradient(rgba(0, 0, 0, 0.837), rgba(5, 5, 25, 0.812))";
 }
 
 document.querySelector(".get-post").addEventListener("click", function () {
@@ -117,7 +119,7 @@ function renderUI(arr) {
   let feedbackHolder = "";
   arr.forEach((post) => {
     feedbackHolder += `
-       <div class=" col-md-6 col-12 me-md-3 me-0 feedback__card p-3 mb-5 mt-3 ">
+       <div class=" col-md-5 col-12 me-md-3 me-0 feedback__card p-3 mb-5 mt-3 ">
       <div class="d-flex flex-column">
               <h4  class='fw-bold feedback-title'>${post.title}</h4>
               <p class="feedback-post">${post.body}</p>
@@ -133,3 +135,5 @@ function renderUI(arr) {
 
   feedbackWrapper.innerHTML = feedbackHolder;
 }
+
+getFeedBack();
