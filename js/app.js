@@ -122,8 +122,8 @@ function renderUI(arr) {
               <h4  class='fw-bold feedback-title'>${post.title}</h4>
               <p class="feedback-post">${post.body}</p>
               <div class="d-flex justify-content-between">
-                  <button class="btn btn-secondary px-2 py-1 mt-3 update-post"  onclick='updatePost(${post.id})'>Update Post</button>
-                  <button class="btn btn-success px-2 py-1 mt-3" id='view-btn' onclick='openSingle(${post.id})'>View Post <i class='bx bx-message'></i></button>
+                  <button class="btn btn-secondary px-2 py-1 mt-3 update-post me-2"  onclick='updatePost(${post.id})'>Update Post</button>
+                  <button class="btn btn-success px-2 py-1 mt-3 me-2" id='view-btn' onclick='openSingle(${post.id})'>View Post <i class='bx bx-message'></i></button>
                   <button class="btn btn-danger px-2 py-1 mt-3"  onclick='deletePost(${post.id})'>Delete Post <i class='bx bx-trash'></i></button>
               </div>  
       </div> 
