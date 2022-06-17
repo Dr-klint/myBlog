@@ -7,7 +7,7 @@ let body = document.querySelector("#body");
 let feedbackBox = [];
 
 function getFeedBack() {
-  fetch("https://jsonplaceholder.typicode.com/posts/?_limit=10") //make a request
+  fetch("https://jsonplaceholder.typicode.com/posts/?_limit=50") //make a request
     .then((response) => response.json()) //the rest response in json format
     .then((data) => {
       console.log(data); //data is a variable
