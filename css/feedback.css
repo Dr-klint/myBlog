@@ -4,7 +4,8 @@
   background: linear-gradient(rgba(0, 0, 0, 0.837), rgba(5, 5, 25, 0.812)),
     url(../img/course-3.jpg);
   padding-top: 120px;
-  padding-bottom: 5rem;
+  padding-bottom: 9rem;
+  max-height: 200%;
   background-repeat: no-repeat;
   background-size: cover;
 }

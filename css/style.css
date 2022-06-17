@@ -32,7 +32,9 @@ body {
 }
 
 .footer__blog {
-  margin-top: -2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .bxs-flask,
