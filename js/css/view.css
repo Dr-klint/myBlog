@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.view-page {
+  height: 100vh;
+}
+
+.view__page {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.53),
+      rgba(237, 242, 247, 0.53)
+    ),
+    url(../img/course-1.jpg);
+  border-radius: 5px;
+  box-shadow: 5px 5px 4px #888888;
+  background-repeat: no-repeat;
+}
